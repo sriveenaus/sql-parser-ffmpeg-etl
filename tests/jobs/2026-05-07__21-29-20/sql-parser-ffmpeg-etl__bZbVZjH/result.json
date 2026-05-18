@@ -1,0 +1,88 @@
+{
+    "id": "25b31ffb-33c5-4b39-ab33-2dc59e994726",
+    "task_name": "sql-parser-ffmpeg-etl",
+    "trial_name": "sql-parser-ffmpeg-etl__bZbVZjH",
+    "trial_uri": "file:///home/vrao/Downloads/sql-parser-ffmpeg-etl/tests/jobs/2026-05-07__21-29-20/sql-parser-ffmpeg-etl__bZbVZjH",
+    "task_id": {
+        "path": "/home/vrao/Downloads/sql-parser-ffmpeg-etl"
+    },
+    "source": null,
+    "task_checksum": "1b92a3befaf6681729daf381c58bc7b109ea7495f7b19d442775042d1b729835",
+    "config": {
+        "task": {
+            "path": "/home/vrao/Downloads/sql-parser-ffmpeg-etl",
+            "git_url": null,
+            "git_commit_id": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "sql-parser-ffmpeg-etl__bZbVZjH",
+        "trials_dir": "jobs/2026-05-07__21-29-20",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "oracle",
+            "import_path": null,
+            "model_name": null,
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "1fc97cf4-bffb-4e2e-9570-30bf98f13689"
+    },
+    "agent_info": {
+        "name": "oracle",
+        "version": "1.0.0",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": null,
+    "exception_info": {
+        "exception_type": "RewardFileNotFoundError",
+        "exception_message": "No reward file found at jobs/2026-05-07__21-29-20/sql-parser-ffmpeg-etl__bZbVZjH/verifier/reward.txt or jobs/2026-05-07__21-29-20/sql-parser-ffmpeg-etl__bZbVZjH/verifier/reward.json",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/home/vrao/.local/share/pipx/venvs/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 363, in run\n    await self._run_verification()\n  File \"/home/vrao/.local/share/pipx/venvs/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 251, in _run_verification\n    await self._verify_with_retry()\n  File \"/home/vrao/.local/share/pipx/venvs/harbor/lib/python3.12/site-packages/tenacity/asyncio/__init__.py\", line 189, in async_wrapped\n    return await copy(fn, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/vrao/.local/share/pipx/venvs/harbor/lib/python3.12/site-packages/tenacity/asyncio/__init__.py\", line 111, in __call__\n    do = await self.iter(retry_state=retry_state)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/vrao/.local/share/pipx/venvs/harbor/lib/python3.12/site-packages/tenacity/asyncio/__init__.py\", line 153, in iter\n    result = await action(retry_state)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/vrao/.local/share/pipx/venvs/harbor/lib/python3.12/site-packages/tenacity/_utils.py\", line 99, in inner\n    return call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/vrao/.local/share/pipx/venvs/harbor/lib/python3.12/site-packages/tenacity/__init__.py\", line 400, in <lambda>\n    self._add_action_func(lambda rs: rs.outcome.result())\n                                     ^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/concurrent/futures/_base.py\", line 449, in result\n    return self.__get_result()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/concurrent/futures/_base.py\", line 401, in __get_result\n    raise self._exception\n  File \"/home/vrao/.local/share/pipx/venvs/harbor/lib/python3.12/site-packages/tenacity/asyncio/__init__.py\", line 114, in __call__\n    result = await fn(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/vrao/.local/share/pipx/venvs/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 269, in _verify_with_retry\n    self._result.verifier_result = await asyncio.wait_for(\n                                   ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/home/vrao/.local/share/pipx/venvs/harbor/lib/python3.12/site-packages/harbor/verifier/verifier.py\", line 157, in verify\n    raise RewardFileNotFoundError(\nharbor.verifier.verifier.RewardFileNotFoundError: No reward file found at jobs/2026-05-07__21-29-20/sql-parser-ffmpeg-etl__bZbVZjH/verifier/reward.txt or jobs/2026-05-07__21-29-20/sql-parser-ffmpeg-etl__bZbVZjH/verifier/reward.json\n",
+        "occurred_at": "2026-05-07T21:29:31.995274"
+    },
+    "started_at": "2026-05-07T21:29:20.506021",
+    "finished_at": "2026-05-07T21:29:46.332807",
+    "environment_setup": {
+        "started_at": "2026-05-07T21:29:20.511692",
+        "finished_at": "2026-05-07T21:29:26.749368"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-07T21:29:26.749397",
+        "finished_at": "2026-05-07T21:29:26.749443"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-07T21:29:26.749464",
+        "finished_at": "2026-05-07T21:29:29.036987"
+    },
+    "verifier": {
+        "started_at": "2026-05-07T21:29:29.037091",
+        "finished_at": "2026-05-07T21:29:31.992425"
+    }
+}

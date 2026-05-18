@@ -1,0 +1,29 @@
+Successfully connected to database: /app/etl_pipeline.db
+Database tables created successfully.
+Database setup complete for ETL pipeline.
+Database setup complete: /app/etl_pipeline.db
+Connected to database: /app/etl_pipeline.db
+Found 2 log files
+Inserted 5 log entries from /app/logs/application.log
+Inserted 5 log entries from /app/logs/system.log
+Database connection closed.
+Log parsing complete.
+Milestone 2 complete: Log parsing script implemented and executed.
+Creating sample media files...
+Connected to database: /app/etl_pipeline.db
+Found 3 media files
+Processed media file: /app/media/sample_video.mp4
+  Duration: 120.0 seconds
+  Format: h264/aac
+  Bitrate: 4096000 bps
+Processed media file: /app/media/presentation.mkv
+  Duration: 120.0 seconds
+  Format: libx264/aac
+  Bitrate: 4096000 bps
+Processed media file: /app/media/sample_audio.wav
+  Duration: 60.0 seconds
+  Format: pcm_s16le
+  Bitrate: 320000 bps
+Database connection closed.
+Media processing complete.
+Milestone 3 complete: ETL pipeline with media processing implemented.

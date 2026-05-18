@@ -1,0 +1,87 @@
+{
+    "id": "f6326797-44d1-439d-a06a-a79f67c2e292",
+    "task_name": "sql-parser-ffmpeg-etl",
+    "trial_name": "sql-parser-ffmpeg-etl__U4e7Y2r",
+    "trial_uri": "file:///home/vrao/Downloads/sql-parser-ffmpeg-etl/jobs/2026-05-08__11-23-02/sql-parser-ffmpeg-etl__U4e7Y2r",
+    "task_id": {
+        "path": "/home/vrao/Downloads/sql-parser-ffmpeg-etl"
+    },
+    "source": null,
+    "task_checksum": "f70915232b9fac5d3392510a36d89b2bf4f2d743524e4f293479e04fe37020fc",
+    "config": {
+        "task": {
+            "path": "/home/vrao/Downloads/sql-parser-ffmpeg-etl",
+            "git_url": null,
+            "git_commit_id": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "sql-parser-ffmpeg-etl__U4e7Y2r",
+        "trials_dir": "jobs/2026-05-08__11-23-02",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "oracle",
+            "import_path": null,
+            "model_name": null,
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "29452b0e-417e-49c3-90dc-02e3b9216756"
+    },
+    "agent_info": {
+        "name": "oracle",
+        "version": "1.0.0",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-08T11:23:02.157824",
+    "finished_at": "2026-05-08T11:23:31.502968",
+    "environment_setup": {
+        "started_at": "2026-05-08T11:23:03.127869",
+        "finished_at": "2026-05-08T11:23:13.825291"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-08T11:23:13.825324",
+        "finished_at": "2026-05-08T11:23:13.825371"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-08T11:23:13.825393",
+        "finished_at": "2026-05-08T11:23:16.099465"
+    },
+    "verifier": {
+        "started_at": "2026-05-08T11:23:16.099568",
+        "finished_at": "2026-05-08T11:23:19.101753"
+    }
+}

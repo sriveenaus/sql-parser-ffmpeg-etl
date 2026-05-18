@@ -1,0 +1,27 @@
+{
+    "id": "608aad2a-4885-4649-a0c7-52f53eaa2c90",
+    "started_at": "2026-05-08T10:35:57.474497",
+    "finished_at": "2026-05-08T10:35:58.065655",
+    "n_total_trials": 1,
+    "stats": {
+        "n_trials": 1,
+        "n_errors": 1,
+        "evals": {
+            "oracle__adhoc": {
+                "n_trials": 0,
+                "n_errors": 1,
+                "metrics": [
+                    {
+                        "mean": 0.0
+                    }
+                ],
+                "reward_stats": {},
+                "exception_stats": {
+                    "RuntimeError": [
+                        "sql-parser-ffmpeg-etl__5auG6w5"
+                    ]
+                }
+            }
+        }
+    }
+}

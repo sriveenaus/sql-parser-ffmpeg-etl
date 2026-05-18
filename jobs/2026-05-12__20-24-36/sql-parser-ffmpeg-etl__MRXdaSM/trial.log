@@ -1,0 +1,69 @@
+Trial sql-parser-ffmpeg-etl__MRXdaSM failed: Docker compose command failed for environment . Command: docker compose -p sql-parser-ffmpeg-etl__mrxdasm -f /home/vrao/.local/share/pipx/venvs/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-build.yaml build. Return code: 1. Stdout: #1 [internal] load local bake definitions
+#1 reading from stdin 568B done
+#1 DONE 0.0s
+invalid tag "hb__": invalid reference format
+
+2514891 v0.29.1 /usr/libexec/docker/cli-plugins/docker-buildx bake --file - --progress rawjson --metadata-file /tmp/compose-build-metadataFile-1d3d441c-adaa-4ce9-97f4-2975f94dea73.json --allow fs.read=/home/vrao/Downloads/sql-parser-ffmpeg-etl/environment
+
+github.com/docker/buildx/build.toSolveOpt
+
+	github.com/docker/buildx/build/opt.go:223
+
+github.com/docker/buildx/build.newBuildRequests
+
+	github.com/docker/buildx/build/build.go:228
+
+github.com/docker/buildx/build.BuildWithResultHandler
+
+	github.com/docker/buildx/build/build.go:344
+
+github.com/docker/buildx/build.Build
+
+	github.com/docker/buildx/build/build.go:324
+
+github.com/docker/buildx/commands.runBake
+
+	github.com/docker/buildx/commands/bake.go:311
+
+github.com/docker/buildx/commands.bakeCmd.func1
+
+	github.com/docker/buildx/commands/bake.go:493
+
+github.com/spf13/cobra.(*Command).execute
+
+	github.com/spf13/cobra@v1.10.1/command.go:1015
+
+github.com/spf13/cobra.(*Command).ExecuteC
+
+	github.com/spf13/cobra@v1.10.1/command.go:1148
+
+github.com/spf13/cobra.(*Command).Execute
+
+	github.com/spf13/cobra@v1.10.1/command.go:1071
+
+main.runStandalone
+
+	github.com/docker/buildx/cmd/buildx/main.go:44
+
+main.run
+
+	github.com/docker/buildx/cmd/buildx/main.go:76
+
+main.main
+
+	github.com/docker/buildx/cmd/buildx/main.go:88
+
+runtime.main
+
+	runtime/proc.go:283
+
+runtime.goexit
+
+	runtime/asm_amd64.s:1700
+
+
+
+. Stderr: None. 
+Docker compose down failed: Docker compose command failed for environment . Command: docker compose -p sql-parser-ffmpeg-etl__mrxdasm -f /home/vrao/.local/share/pipx/venvs/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-build.yaml down --rmi all --volumes --remove-orphans. Return code: 1. Stdout:  Image hb__  Removing
+Error response from daemon: invalid reference format
+. Stderr: None. 

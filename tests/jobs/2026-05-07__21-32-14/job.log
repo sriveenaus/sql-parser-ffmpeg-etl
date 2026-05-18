@@ -1,0 +1,7 @@
+Trial sql-parser-ffmpeg-etl__gjg7gUR failed: No reward file found at jobs/2026-05-07__21-32-14/sql-parser-ffmpeg-etl__gjg7gUR/verifier/reward.txt or jobs/2026-05-07__21-32-14/sql-parser-ffmpeg-etl__gjg7gUR/verifier/reward.json
+Docker compose down failed: Docker compose command failed for environment sql-parser-ffmpeg-etl. Command: docker compose -p sql-parser-ffmpeg-etl__gjg7gur -f /home/vrao/.local/share/pipx/venvs/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-build.yaml down --rmi all --volumes --remove-orphans. Return code: 1. Stdout:  Container sql-parser-ffmpeg-etl__gjg7gur-main-1  Stopping
+ Container sql-parser-ffmpeg-etl__gjg7gur-main-1  Error while Stopping
+Error response from daemon: cannot stop container: 9a7f21425e1eb03cf6876f5016e82e7739c639e0c82b9857b51557f69cf092c1: permission denied
+. Stderr: None. 
+Exception RewardFileNotFoundError is in exclude_exceptions, not retrying
+Not retrying trial because the exception is not in include_exceptions or the maximum number of retries has been reached

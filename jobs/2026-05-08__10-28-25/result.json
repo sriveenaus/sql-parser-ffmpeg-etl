@@ -1,0 +1,27 @@
+{
+    "id": "92940bbd-286f-4b32-ba5e-ca45434a4cd9",
+    "started_at": "2026-05-08T10:28:25.217236",
+    "finished_at": "2026-05-08T10:28:45.612783",
+    "n_total_trials": 1,
+    "stats": {
+        "n_trials": 1,
+        "n_errors": 1,
+        "evals": {
+            "oracle__adhoc": {
+                "n_trials": 0,
+                "n_errors": 1,
+                "metrics": [
+                    {
+                        "mean": 0.0
+                    }
+                ],
+                "reward_stats": {},
+                "exception_stats": {
+                    "RewardFileNotFoundError": [
+                        "sql-parser-ffmpeg-etl__JbnfuY5"
+                    ]
+                }
+            }
+        }
+    }
+}

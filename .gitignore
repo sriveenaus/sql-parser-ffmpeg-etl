@@ -1,0 +1,26 @@
+# Test artifacts and temporary files
+__pycache__/
+.pytest_cache/
+*.pyc
+.verifier/
+
+# Database files
+*.db
+etl_pipeline.db
+
+# Agent artifacts
+jobs/
+
+# Environment files
+.env
+
+# Solution directory - FOR VERIFIER ONLY, should not be visible to agents
+# Remove or exclude this from agent task distribution
+solution/
+
+# Temporary files from agent runs
+hello.txt
+milestone*_done.txt
+
+# Stray files
+environment/df

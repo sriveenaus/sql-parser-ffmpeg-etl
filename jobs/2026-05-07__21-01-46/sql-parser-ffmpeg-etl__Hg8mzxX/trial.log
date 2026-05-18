@@ -1,0 +1,5 @@
+Trial sql-parser-ffmpeg-etl__Hg8mzxX failed: No reward file found at jobs/2026-05-07__21-01-46/sql-parser-ffmpeg-etl__Hg8mzxX/verifier/reward.txt or jobs/2026-05-07__21-01-46/sql-parser-ffmpeg-etl__Hg8mzxX/verifier/reward.json
+Docker compose down failed: Docker compose command failed for environment sql-parser-ffmpeg-etl. Command: docker compose -p sql-parser-ffmpeg-etl__hg8mzxx -f /home/vrao/.local/share/pipx/venvs/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-build.yaml down --rmi all --volumes --remove-orphans. Return code: 1. Stdout:  Container sql-parser-ffmpeg-etl__hg8mzxx-main-1  Stopping
+ Container sql-parser-ffmpeg-etl__hg8mzxx-main-1  Error while Stopping
+Error response from daemon: cannot stop container: 7586ffaff2c890fc974cc114c3a9850efa23f68d096778529eb2286672b11ccb: permission denied
+. Stderr: None. 

@@ -1,0 +1,9 @@
+Trial sql-parser-ffmpeg-etl__5auG6w5 failed: Docker compose command failed for environment . Command: docker compose -p sql-parser-ffmpeg-etl__5aug6w5 -f /home/vrao/.local/share/pipx/venvs/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-build.yaml build. Return code: 1. Stdout: #1 [internal] load local bake definitions
+#1 reading from stdin 568B done
+#1 DONE 0.0s
+invalid tag "hb__": invalid reference format
+
+. Stderr: None. 
+Docker compose down failed: Docker compose command failed for environment . Command: docker compose -p sql-parser-ffmpeg-etl__5aug6w5 -f /home/vrao/.local/share/pipx/venvs/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-build.yaml down --rmi all --volumes --remove-orphans. Return code: 1. Stdout:  Image hb__  Removing
+Error response from daemon: invalid reference format
+. Stderr: None. 

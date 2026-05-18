@@ -1,0 +1,8 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.13, pytest-9.0.3, pluggy-1.6.0
+rootdir: /tests
+collected 5 items
+
+../tests/test_task.py .....                                              [100%]
+
+============================== 5 passed in 1.68s ===============================

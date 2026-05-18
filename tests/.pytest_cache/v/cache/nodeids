@@ -1,0 +1,7 @@
+[
+  "test_task.py::test_log_entries_have_rows",
+  "test_task.py::test_log_entries_table_exists",
+  "test_task.py::test_media_metadata_have_rows",
+  "test_task.py::test_media_metadata_table_exists",
+  "test_task.py::test_run_solution_and_create_database"
+]
