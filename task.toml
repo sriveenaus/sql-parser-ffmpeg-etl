@@ -1,0 +1,68 @@
+version = "2.0"
+
+[metadata]
+name = "SQLite + FFmpeg ETL Pipeline"
+description = "Build a Python ETL pipeline that ingests logs into SQLite and extracts media metadata using FFmpeg-style processing."
+author_name = "Veena Rao"
+author_email = "sriveena.us@gmail.com"
+difficulty = "hard"
+category = "software-engineering"
+subcategories = ["db_interaction"]
+tags = ["sqlite", "ffmpeg", "etl", "log-parsing"]
+expert_time_estimate_min = 90
+junior_time_estimate_min = 180
+codebase_size = "minimal"
+number_of_milestones = 3
+languages = ["python"]
+
+[verifier]
+timeout_sec = 600.0
+
+[agent]
+timeout_sec = 900.0
+
+# CRITICAL SECURITY NOTE: The 'solution/' directory below this task.toml should be excluded
+# from the agent's environment to prevent cheating. The solution is for verifier use only.
+# The agent should NOT have access to solution/run_solution.sh or any solution scripts.
+# Ensure your deployment system excludes the 'solution/' directory from agent mounts.
+
+[environment]
+build_timeout_sec = 600.0
+cpus = 2
+memory_mb = 4096
+storage_mb = 10240
+allow_internet = false
+workdir = "/workspace"
+
+[solution]
+env = {}
+
+[[steps]]
+name = "milestone_1"
+path = "steps/milestone_1"
+
+[steps.agent]
+timeout_sec = 900
+
+[steps.verifier]
+timeout_sec = 600
+
+[[steps]]
+name = "milestone_2"
+path = "steps/milestone_2"
+
+[steps.agent]
+timeout_sec = 900
+
+[steps.verifier]
+timeout_sec = 600
+
+[[steps]]
+name = "milestone_3"
+path = "steps/milestone_3"
+
+[steps.agent]
+timeout_sec = 900
+
+[steps.verifier]
+timeout_sec = 600
