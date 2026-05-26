@@ -43,3 +43,4 @@ Valid log levels are: `DEBUG`, `INFO`, `WARNING`, `ERROR`, `CRITICAL`.
 - `/app/media_processor.py` - Media processing module
 - `/app/milestone2_done.txt` - Milestone 2 completion marker
 - `/app/milestone3_done.txt` - Milestone 3 completion marker
+<img width="1482" height="1026" alt="Screenshot from 2026-05-26 10-45-05" src="https://github.com/user-attachments/assets/02e1bbde-1c7e-401b-8cc5-7302777af376" />
