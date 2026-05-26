@@ -44,6 +44,7 @@ Valid log levels are: `DEBUG`, `INFO`, `WARNING`, `ERROR`, `CRITICAL`.
 - `/app/milestone2_done.txt` - Milestone 2 completion marker
 - `/app/milestone3_done.txt` - Milestone 3 completion marker
 
-<img width="1713" height="989" alt="Screenshot from 2026-05-18 22-46-45" src="https://github.com/user-attachments/assets/e84987ce-74ff-4140-afef-c0d8a658628f" />
+
+<img width="1482" height="1026" alt="Screenshot from 2026-05-26 10-45-05" src="https://github.com/user-attachments/assets/2d458e4d-5727-4dc0-afae-ce8a3f3d05f2" />
 
 
