@@ -12,24 +12,24 @@ Establish a SQLite database connection and create the necessary tables for stori
 
 | Column Name  | Type      | Constraints |
 | ------------ | --------- | ----------- |
-| id           | INTEGER   | PRIMARY KEY |
+| id           | INTEGER   | PRIMARY KEY AUTOINCREMENT |
 | timestamp    | TEXT      | NOT NULL    |
 | level        | TEXT      | NOT NULL    |
 | message      | TEXT      | NOT NULL    |
 | source_file  | TEXT      |             |
-| processed_at | TIMESTAMP | NOT NULL    |
+| processed_at | TIMESTAMP | NOT NULL DEFAULT CURRENT_TIMESTAMP |
 
 4. **media_metadata table** - Created with the following schema:
 
 | Column Name  | Type      | Constraints |
 | ------------ | --------- | ----------- |
-| id           | INTEGER   | PRIMARY KEY |
+| id           | INTEGER   | PRIMARY KEY AUTOINCREMENT |
 | log_entry_id | INTEGER   | NOT NULL, FOREIGN KEY REFERENCES log_entries(id) |
 | media_file   | TEXT      | NOT NULL    |
 | duration     | REAL      |             |
 | format       | TEXT      |             |
 | bitrate      | INTEGER   |             |
-| processed_at | TIMESTAMP | NOT NULL    |
+| processed_at | TIMESTAMP | NOT NULL DEFAULT CURRENT_TIMESTAMP |
 
 ### Implementation Details
 Create a `DatabaseConnection` class that:
@@ -44,3 +44,6 @@ The tests will verify:
 - Both `log_entries` and `media_metadata` tables exist
 - Both tables have all required columns
 - Foreign key relationship is established between the tables
+- The `level` column in `log_entries` has a CHECK constraint allowing only 'DEBUG', 'INFO', 'WARNING', 'ERROR', 'CRITICAL'
+- The `processed_at` columns have DEFAULT CURRENT_TIMESTAMP
+- The `id` columns are INTEGER PRIMARY KEY AUTOINCREMENT

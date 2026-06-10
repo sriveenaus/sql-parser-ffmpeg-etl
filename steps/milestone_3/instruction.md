@@ -1,10 +1,10 @@
-## Milestone 3: ETL Pipeline with FFmpeg
+## Milestone 3: ETL Pipeline with Media Metadata
 
 ### Objective
 Complete the ETL pipeline by:
-1. Integrating FFmpeg for media file processing
-2. Extracting media metadata (duration, bitrate, format, codec)
-3. Linking media metadata to log entries in the database
+1. Processing media files and extracting or assigning metadata
+2. Storing media metadata (duration, bitrate, format) in the database
+3. Linking media metadata to log entries via foreign keys
 4. Creating an end-to-end ETL pipeline that extracts, transforms, and loads data
 5. Creating a marker file to indicate successful completion
 
@@ -17,12 +17,28 @@ Complete the ETL pipeline by:
    - `/app/milestone2_done.txt` (from Milestone 2)
 
 ### media_processor.py Implementation
+The module must implement a `MediaProcessor` class with the following interface:
+
+```python
+class MediaProcessor:
+    def __init__(self, db_path: str):
+        """Initialize with path to SQLite database."""
+        
+    def connect(self) -> bool:
+        """Establish connection to the database."""
+        
+    def process_media_directory(self, directory: str) -> None:
+        """Process all media files in directory and insert metadata into database."""
+        
+    def close(self) -> None:
+        """Close the database connection."""
+```
+
 The module must:
-- Have a function or class that processes media files
-- Extract metadata: duration, format, bitrate (using FFmpeg-style extraction)
+- Extract metadata: duration, format, bitrate (using FFmpeg-style extraction or simulation)
 - Insert processed metadata into the `media_metadata` table with foreign keys to `log_entries`
 - Link media files to their corresponding log entries
-- Handle multiple media formats
+- Handle multiple media formats (skip unsupported files without crashing)
 - Be executable or importable by the test harness
 
 ### Sample Media Files

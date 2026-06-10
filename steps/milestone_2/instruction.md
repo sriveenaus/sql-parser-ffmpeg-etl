@@ -10,16 +10,32 @@ Create a log parsing script that:
 ### Required Artifacts
 1. **log_parser.py** - A Python module in `/app` that implements log parsing functionality
 2. **milestone2_done.txt** - A marker file in `/app` created after milestone 2 completes
-3. **Sample log files** - Create test log files to parse and load into the database
+3. **Sample log files** - Create test log files in `/app/logs/` directory with `.log` extension to parse and load into the database
 
 ### log_parser.py Implementation
+The module must implement a `LogParser` class with the following interface:
+
+```python
+class LogParser:
+    def __init__(self, db_path: str):
+        """Initialize with path to SQLite database."""
+        
+    def connect(self) -> bool:
+        """Establish connection to the database."""
+        
+    def parse_log_file(self, log_path: str) -> None:
+        """Parse log entries from file and insert into database."""
+        
+    def close(self) -> None:
+        """Close the database connection."""
+```
+
 The module must:
-- Have a function or class that reads log files
 - Parse log entries extracting: timestamp, level, message, source_file
 - Normalize or validate each parsed log level so it is one of:
   `DEBUG`, `INFO`, `WARNING`, `ERROR`, or `CRITICAL`
 - Insert parsed entries into the `log_entries` table using the database connection from Milestone 1
-- Handle errors gracefully
+- Handle errors gracefully (skip malformed lines without crashing)
 - Be executable or importable by the test harness
 
 ### Database Integration
